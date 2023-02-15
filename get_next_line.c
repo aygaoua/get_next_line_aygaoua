@@ -75,12 +75,6 @@ char	*ft_read_and_save(int fd, char *save)
 	buff = malloc((BUFFER_SIZE + 1) * sizeof(char));
 	if (!buff)
 		return (NULL);
-	
-	// if (save[0] == '\n')
-	// {
-	// 	free(buff);
-	// 	return (save);
-	// }
 	read_bytes = 1;
 	while (!ft_strchr(save, '\n') && read_bytes != 0)
 	{
